@@ -8,8 +8,11 @@
 </head>
 <body>
     <p id="clickChange"></p>
+    <input id="text" type="text">
+    <button id="update">Update</button>
     <button onclick="clickon()">Just function</button>
-    <button onclick="delet()">direct add event listener</button>
+    <button onclick="delet()">delete text</button>
+    <button id="second">second text</button>
 
     <script>
         function clickon(){
@@ -20,6 +23,15 @@
         function delet(){
             document.getElementById('clickChange').innerHTML = "";
         }
+
+        document.getElementById('second').addEventListener('click',function(){const secondText = document.getElementById('clickChange'); secondText.innerHTML = "this is second text."})
+
+        document.getElementById('update').addEventListener('click',function(){
+            const text = document.getElementById('text');
+            const innerText = document.getElementById('clickChange');
+            innerText.innerHTML = text.value;
+            text.value = "";
+        })
     </script>
 </body>
 </html>

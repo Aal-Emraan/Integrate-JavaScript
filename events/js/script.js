@@ -1,3 +1,5 @@
+// index html 
+
 function red(){
     document.body.style.backgroundColor = 'red'
 }
@@ -23,3 +25,6 @@ const hotpink = document.getElementById('hotpink');
 hotpink.addEventListener('click', function(){document.body.style.backgroundColor = 'hotpink'});
 
 document.getElementById('lightblue').addEventListener('click',function(){document.body.style.backgroundColor = 'lightblue'})
+
+
+// event common
