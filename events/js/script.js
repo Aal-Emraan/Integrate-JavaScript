@@ -21,3 +21,5 @@ function cyanColor(){
 
 const hotpink = document.getElementById('hotpink');
 hotpink.addEventListener('click', function(){document.body.style.backgroundColor = 'hotpink'});
+
+document.getElementById('lightblue').addEventListener('click',function(){document.body.style.backgroundColor = 'lightblue'})
